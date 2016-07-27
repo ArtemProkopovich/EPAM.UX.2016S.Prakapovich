@@ -1,6 +1,6 @@
 body{
     padding-top:3%;
-    background: sandybrown; 
+    background: url(background.jpg);
 }
 
 .main-container{
@@ -8,7 +8,7 @@ body{
     margin-left:15%;
     margin-right:15%;
     padding-top:5%;
-    padding-bottom:5%;
+    padding-bottom: 3%;
     box-shadow: 5px 8px 15px rgb(100,100,100);
 }
 
@@ -17,19 +17,84 @@ body{
     margin-right:8%;
 }
 
-.left-column{
-    display: inline-block;
-    width:55%;
+.header-panel{
+    margin-bottom:20px;
 }
 
-.right-column{
-    display: inline-block;
+.header-label{
+    background-color: red;
+    margin-left:-9.5%;
+    float:left;
+    width: 9.5%;
+    height: 160px;
+}
+
+.header-left-column{
+    background-color: red;
+    float: left;
+    width:20%;
+    height: 160px;
+}
+
+.header-center-column{
+    float:left;
+    margin-left:2%;
+    width:33%;
+}
+
+.header-right-column{
+    float: left;
     margin-left:5%;
     width:39%;
 }
 
+.header-image{
+    margin-top:15px;
+    background: url(photo.jpg);
+    background-size: contain;
+    width: 130px;
+    height: 130px;
+}
+
+.header-space{
+    height: 64px;
+    width: 100%;
+}
+
+.header-info{
+    float:left;
+    width:60%;
+}
+
+.header-center-column h1{
+    margin-top:0px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-center-column h2{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: red;
+    font-weight: 100;
+}
+
 .panel{
     margin-bottom:10%;
+}
+
+.left-panel{
+    float: left;
+    width:55%;
+}
+
+.right-panel{
+    float: left;
+    margin-left:5%;
+    width:39%;
 }
 
 .panel-header{
@@ -46,21 +111,118 @@ body{
 
 }
 .panel-content p{
-    font: bold 100% serif;
     margin-top:3px;
 }
 
-
-label{
-    font: bold 100% serif;
+.about-text{
+    font-family: serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-list-item{
-    font: 100% sans-serif;
+.table{
+    margin-top:30px;
+}
+
+.wide{
+    padding-bottom:10px;
+}   
+
+.property-label{
+    display: inline-block;
+    width:35%;
+    font: bold 15px serif;
+}
+
+.property-text{
+    display: inline-block;
+    margin-left: 5%;
+    width:55%;
+    font: 12px sans-serif;
+}
+
+.list-mark{
+    content:'';
+    float: left;
+    width:8%;
+}
+
+.list-year{
+    text-align: center;
+    float:left;
+    width:35%;
+}
+
+.list-content{
+    float:left;
+    width:57%;
+    clear: right;
+}
+
+.list-year h3{
+    margin: 0px;
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.list-content h3{
+    margin: 0px;
+    color: red;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.list-content h4{
+    margin: 0px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.list-content p{
+    margin: 0px;
+    color:black 
+}
+
+.progress{
+    margin-left: 10%;
+    display: inline-block;
+    width:50%;
+}
+
+.progress-bar{
+    position: relative;
+    height: 15px;     
+    background-color: lightgray
+}
+
+.progress-status{
+    height: 100%;
+    position: absolute;
+    background-color:red;
+}
+
+.diamond {
+    width: 15px;
+    height: 15px;
+    background: red;
+    margin: 7px 5px 10px 10px;
+/* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+/* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
 }
 
 .footer{
-    margin-top:5%;
     margin-left:8%;
     margin-right:8%;
 }
@@ -83,6 +245,16 @@ list-item{
 
 .footer-text{
     font: bold 100% serif; 
+}
+
+.main-footer{
+    margin-top:3%;
+    height: 100px;
+    text-align: center;
+}
+
+.clearfix{
+    clear: left;
 }
 
 .left{
