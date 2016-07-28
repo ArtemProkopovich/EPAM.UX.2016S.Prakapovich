@@ -1,65 +1,61 @@
 body{
     padding-top:3%;
-    background: url(background.jpg);
+    background: url(img/background.jpg);
 }
 
 .main-container{
     background: white;
-    margin-left:15%;
-    margin-right:15%;
+    margin-left:auto;
+    margin-right: auto;
+    width: 826.667px;
     padding-top:5%;
     padding-bottom: 3%;
     box-shadow: 5px 8px 15px rgb(100,100,100);
 }
 
 .content{
-    margin-left:8%;
-    margin-right:8%;
+    margin-left:6.05%;
+    margin-right:5.64%;
 }
 
 .header-panel{
     margin-bottom:20px;
 }
 
-.header-label{
-    background-color: red;
-    margin-left:-9.5%;
+.header-label, .header-left-column{
+    background-color: #ef4541;
+    height: 152.67px;
+}
+
+.header-label{  
+    margin-left:-50px;
     float:left;
-    width: 9.5%;
-    height: 160px;
+    width: 50px; 
 }
 
 .header-left-column{
-    background-color: red;
     float: left;
-    width:20%;
-    height: 160px;
+    width:37.54%;
 }
 
 .header-center-column{
     float:left;
     margin-left:2%;
-    width:33%;
-}
-
-.header-right-column{
-    float: left;
-    margin-left:5%;
-    width:39%;
 }
 
 .header-image{
-    margin-top:15px;
-    background: url(photo.jpg);
-    background-size: contain;
-    width: 130px;
-    height: 130px;
+    margin-top:13px;
+    background: white;
+    width: 132.67px;
+    height: 126px;
 }
 
 .header-space{
-    height: 64px;
+    display: inline-block;
+    height: 85px;
     width: 100%;
 }
+
 
 .header-info{
     float:left;
@@ -67,122 +63,117 @@ body{
 }
 
 .header-center-column h1{
-    margin-top:0px;
-    margin-bottom: 10px;
-    font-family: sans-serif;
-    font-size: 30px;
+    margin:0px;
+    font-family: Arial, 'Myriad Pro Bold', sans-serif;
+    font-size: 34px;
     font-weight: bold;
 }
 
 .header-center-column h2{
     margin: 0px;
-    font-family: sans-serif;
-    font-size: 20px;
-    color: red;
+    font-family: Verdana, 'Myriad Pro Light', sans-serif;
+    font-size: 22.6px;
+    color: #ef4541;
     font-weight: 100;
 }
 
 .panel{
-    margin-bottom:10%;
+    margin-bottom:30px;
 }
 
-.left-panel{
+.left-panel, .header-panel-sign{
     float: left;
-    width:55%;
+    width:55.7587%;
 }
 
-.right-panel{
+.right-panel, .header-right-column{
     float: left;
-    margin-left:5%;
-    width:39%;
+    margin-left:6.033%;
+    width:38.2%;
 }
 
 .panel-header{
-    padding:3px 0px 3px 10px;
-    background: #dcdcdc;
+    padding:3px 0px 3px 12px;
+    background: #dbdbdb;
 }
 
 .panel-header h6{
     margin: 0px;
-    font: bold 100% sans-serif;
 }
 
-.panel-content{
-
-}
 .panel-content p{
     margin-top:3px;
 }
 
-.about-text{
-    font-family: serif;
-    font-size: 15px;
+.about-text, .panel-header h6, .property-label, .property-text{
+    font: 13px Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-.table{
-    margin-top:30px;
+.property-text{
+    font-weight: normal;
 }
 
-.wide{
-    padding-bottom:10px;
-}   
+.table{
+    margin-top:20px;
+}
+
+.table-item.wide{
+    padding-bottom:18.3px;
+}
 
 .property-label{
     display: inline-block;
     width:35%;
-    font: bold 15px serif;
 }
 
 .property-text{
     display: inline-block;
-    margin-left: 5%;
-    width:55%;
-    font: 12px sans-serif;
 }
 
 .list-mark{
-    content:'';
+    vertical-align: middle;
     float: left;
-    width:8%;
+    width:20px;
 }
 
 .list-year{
+    vertical-align: middle;
     text-align: center;
     float:left;
-    width:35%;
+    width:100px;
 }
 
 .list-content{
     float:left;
-    width:57%;
-    clear: right;
 }
 
-.list-year h3{
+.panel .list-content{
+    width: 55%;
+}
+.panel.left-panel .list-content{
+    width:70.5%;
+}
+
+.list-year h3, .list-content h3, .list-content h4{
     margin: 0px;
     color: black;
-    font-size: 20px;
+    font-size: 15.6px;
     font-weight: 100;
 }
 
 .list-content h3{
-    margin: 0px;
-    color: red;
-    font-size: 20px;
-    font-weight: 100;
+    color: #ef4541;
 }
 
 .list-content h4{
-    margin: 0px;
-    color: black;
-    font-size: 15px;
     font-weight: bold;
 }
 
 .list-content p{
     margin: 0px;
-    color:black 
+    color:black;
+    font-size: 14.3px;
 }
 
 .progress{
@@ -194,20 +185,20 @@ body{
 .progress-bar{
     position: relative;
     height: 15px;     
-    background-color: lightgray
+    background-color: #dbdbdb
 }
 
 .progress-status{
     height: 100%;
     position: absolute;
-    background-color:red;
+    background-color:#ef4541;
 }
 
 .diamond {
     width: 15px;
     height: 15px;
-    background: red;
-    margin: 7px 5px 10px 10px;
+    background: #ef4541;
+    margin: 4px 5px 10px 10px;
 /* Rotate */
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -222,11 +213,6 @@ body{
     transform-origin: 0 100%;
 }
 
-.footer{
-    margin-left:8%;
-    margin-right:8%;
-}
-
 .footer-item{
     width:32%;
     display:inline-block;
@@ -239,12 +225,13 @@ body{
 }
 
 .footer-img{
-    width:25px;
-    height: 25px;
+    width:33.3px;
+    height: 33.3px;
 }
 
 .footer-text{
-    font: bold 100% serif; 
+    vertical-align: middle;
+    font: bold 18.5px serif; 
 }
 
 .main-footer{
