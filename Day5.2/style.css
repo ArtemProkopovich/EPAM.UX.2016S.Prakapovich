@@ -1,0 +1,69 @@
+.my-table
+{
+    width: 100%;
+    border:2px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.3);
+    border-spacing: 0px;
+}
+
+tr:nth-child(even)
+{
+    background-color:white;
+}
+tr:nth-child(2n+3)
+{
+    background-color:lightgray;
+}
+
+.header
+{
+    background-color:gray; 
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.line:hover{
+    background: linear-gradient(to left, #fefcea, #f1da36);
+    background-attachment: fixed;
+}
+
+td{
+    margin:0px;
+    border: 0px;
+    border-left: 1px solid gray;
+}
+
+.line td:first-child{
+    border-left: 0px;
+}
+
+th{
+    margin:0px;
+    border: 0px;
+    border-left: 1px solid black;
+    min-width: 70px;
+}
+
+.header th:first-child{
+    border-left: 0px;
+}
+
+.line td:first-child:first-letter{
+    color:red;
+}
+
+.line td:first-child:after{
+    content: '($)';
+}
+
+.line td:after{
+    content: '(mln)';
+}
+
+.header th{
+    border-bottom:2px solid black;
+}
+
+
