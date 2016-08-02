@@ -3,13 +3,17 @@ body{
     background: url(img/background.jpg);
 }
 
+h1, h2, h3,h4,h5,h6,p{
+    margin:0px;
+}
+
 .main-container{
     background: url(1.png);
     background-size: 100%;
     margin-left:auto;
     margin-right: auto;
     width: 826.667px;
-    padding-top:5%;
+    padding-top:68px;
     padding-bottom: 3%;
     box-shadow: 5px 8px 15px rgb(100,100,100);
 }
@@ -19,9 +23,6 @@ body{
     margin-right:5.64%;
 }
 
-.header-panel{
-    margin-bottom:20px;
-}
 
 .header-label, .header-left-column{
     background-color: #ef4541;
@@ -53,7 +54,7 @@ body{
 
 .header-space{
     display: inline-block;
-    height: 85px;
+    height: 80px;
     width: 100%;
 }
 
@@ -73,13 +74,13 @@ body{
 .header-center-column h2{
     margin: 0px;
     font-family: Verdana, 'Myriad Pro Light', sans-serif;
-    font-size: 22.6px;
+    font-size: 27px;
     color: #ef4541;
     font-weight: 100;
 }
 
 .panel{
-    margin-bottom:30px;
+    margin-bottom:21px;
 }
 
 .left-panel, .header-panel-sign{
@@ -103,29 +104,47 @@ body{
 }
 
 .panel-content p{
-    margin-top:3px;
+    margin-top:5px;
+    margin-bottom:20px;
 }
 
-.about-text, .panel-header h6, .property-label, .property-text{
+.about-text, .panel-header h6, .property-label{
     font: 13px Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 .property-text{
-    font-weight: normal;
+    font: 13px Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .table{
-    margin-top:20px;
+    margin-top:15px;
 }
 
-.table-item.wide{
-    padding-bottom:18.3px;
+.table.work-experience-margin{
+    margin-top:31px;
+}
+
+.table.skills-margin{
+    margin-top:34px;
+}
+
+.table-item.work-wide{
+    padding-bottom:10px;
+}
+
+.table-item.education-wide{
+    padding-bottom:16px;
+}
+
+.table-item.skill-wide{
+    padding-bottom:15px;
 }
 
 .property-label{
     display: inline-block;
-    width:35%;
+    width:37%;
 }
 
 .property-text{
@@ -135,32 +154,42 @@ body{
 .list-mark{
     vertical-align: middle;
     float: left;
-    width:20px;
+    width:7.177%;
 }
 
 .list-year{
     vertical-align: middle;
     text-align: center;
     float:left;
-    width:100px;
+    width:30%;
 }
 
 .list-content{
     float:left;
+    margin-left: 8%;
+    width: 53%;
 }
 
-.panel .list-content{
-    width: 55%;
-}
-.panel.left-panel .list-content{
-    width:70.5%;
+.list-year.v2{
+    float:left;
+    width: 20%;
 }
 
-.list-year h3, .list-content h3, .list-content h4{
+.list-content.v2{
+    margin-left: 5%;
+
+}
+
+.list-year h2{
+    font-size: 15.54px;
+    font-weight: bold;
+}
+
+.list-content h3, .list-content h4, .list-content p{
     margin: 0px;
     color: black;
-    font-size: 15.6px;
-    font-weight: 100;
+    font-size: 15.54px;
+    font-weight: normal;
 }
 
 .list-content h3{
@@ -171,16 +200,10 @@ body{
     font-weight: bold;
 }
 
-.list-content p{
-    margin: 0px;
-    color:black;
-    font-size: 14.3px;
-}
-
 .progress{
-    margin-left: 10%;
+    margin-left: 14.4%;
     display: inline-block;
-    width:50%;
+    width:47%;
 }
 
 .progress-bar{
@@ -196,10 +219,10 @@ body{
 }
 
 .diamond {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     background: #ef4541;
-    margin: 4px 5px 10px 10px;
+    margin: 6px 6px 10px 10px;
 /* Rotate */
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -214,9 +237,13 @@ body{
     transform-origin: 0 100%;
 }
 
+.footer{
+    margin-top:21px;
+}
+
 .footer-item{
-    width:32%;
-    display:inline-block;
+    width:33.3%;
+    float: left;
 }
 
 .rounded-img{
@@ -230,30 +257,33 @@ body{
     height: 33.3px;
 }
 
+.footer-item .left{
+    padding-left: 3px;
+    text-align: left;
+}
+
+.footer-item .center{
+    padding-right: 77px;
+    text-align: center;
+}
+
+.footer-item .right{
+    padding-right: 27px;
+    text-align: right;
+}
+
 .footer-text{
     vertical-align: middle;
     font: bold 18.5px serif; 
 }
 
-.main-footer{
+footer{
     margin-top:3%;
-    height: 100px;
+    height: 50px;
     text-align: center;
 }
 
 .clearfix{
     clear: left;
-}
-
-.left{
-    text-align: left;
-}
-
-.center{
-    text-align: center;
-}
-
-.right{
-    text-align: right;
 }
 
