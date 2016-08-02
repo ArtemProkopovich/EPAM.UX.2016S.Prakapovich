@@ -1,42 +1,26 @@
-.table{
+.main-table{
     font-family: Verdana,sans-serif;
     margin-left:20%;
     width:60%;
     border-bottom:1px solid #ccc;
 }
 
-.row,.row-header{
-    padding: 5px;
-    border:1px solid #ccc;
-    border-bottom:none;
+.main-header{
+    background-color: lightgray;
 }
 
-.row{    
-    line-height: 1.5;
+.epam{
+    color:blue;
 }
 
-.row.white{
-    background-color: #fff;
+.menu-header{
+    background-color:#3F3737;
+    color:white;
 }
 
-.row.dark{
-    background-color: #f1f1f1;
+.menu-header td:hover
+{
+    color:black;
+    background-color:white;
 }
 
-.label-cell{
-    padding: 1%;
-    vertical-align: top;
-    display:inline-block;
-    width:19%;
-}
-
-.text-cell{
-    width: 75%;
-    padding: 1%;
-    vertical-align: top;
-    display:inline-block;
-}
-
-.row-header{
-    font-weight: bold;
-}
