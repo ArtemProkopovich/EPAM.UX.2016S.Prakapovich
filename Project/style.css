@@ -1,5 +1,8 @@
 body{
+    word-wrap: break-word;
+    margin: 0px;
     padding-top:3%;
+    height: 100%;
     background: url(img/background.jpg);
 }
 
@@ -7,9 +10,20 @@ h1, h2, h3,h4,h5,h6,p{
     margin:0px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .main-container{
-    background: url(1.png);
-    background-size: 100%;
+    flex: 1 0 auto;
+    background: white;
     margin-left:auto;
     margin-right: auto;
     width: 826.667px;
@@ -21,8 +35,8 @@ h1, h2, h3,h4,h5,h6,p{
 .content{
     margin-left:6.05%;
     margin-right:5.64%;
+    
 }
-
 
 .header-label, .header-left-column{
     background-color: #ef4541;
@@ -40,7 +54,12 @@ h1, h2, h3,h4,h5,h6,p{
     width:37.54%;
 }
 
+.panel.personal-margin{
+    margin-top: 85px;
+}
+
 .header-center-column{
+    margin-top:80px;
     float:left;
     margin-left:2%;
 }
@@ -57,7 +76,6 @@ h1, h2, h3,h4,h5,h6,p{
     height: 80px;
     width: 100%;
 }
-
 
 .header-info{
     float:left;
@@ -99,7 +117,7 @@ h1, h2, h3,h4,h5,h6,p{
     background: #dbdbdb;
 }
 
-.panel-header h6{
+.panel-header h3{
     margin: 0px;
 }
 
@@ -108,25 +126,37 @@ h1, h2, h3,h4,h5,h6,p{
     margin-bottom:20px;
 }
 
-.about-text, .panel-header h6, .property-label{
+.about-text, .panel-header h3, .property-label, .input-text{
     font: 13px Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-.property-text{
-    font: 13px Arial, Helvetica, sans-serif;
-    font-weight: bold;
+.input-text{
+    width: 170px;
+    color: black;
+    font-weight: normal;
+    background:white;
+    border:none;
 }
 
-.table{
+ul{
+    list-style-type:none;
+    padding: 0px;
+}
+
+.panel-content{
     margin-top:15px;
 }
 
-.table.work-experience-margin{
+.panel-content.work-experience-margin{
     margin-top:31px;
 }
 
-.table.skills-margin{
+.panel-content.about-margin{
+    margin-top:0px;
+}
+
+.panel-content.skills-margin{
     margin-top:34px;
 }
 
@@ -144,11 +174,7 @@ h1, h2, h3,h4,h5,h6,p{
 
 .property-label{
     display: inline-block;
-    width:37%;
-}
-
-.property-text{
-    display: inline-block;
+    width:100px;
 }
 
 .list-mark{
@@ -180,23 +206,23 @@ h1, h2, h3,h4,h5,h6,p{
 
 }
 
-.list-year h2{
+.list-year h4{
     font-size: 15.54px;
     font-weight: bold;
 }
 
-.list-content h3, .list-content h4, .list-content p{
+.list-content h4, .list-content h5, .list-content p{
     margin: 0px;
     color: black;
     font-size: 15.54px;
     font-weight: normal;
 }
 
-.list-content h3{
+.list-content h4{
     color: #ef4541;
 }
 
-.list-content h4{
+.list-content h5{
     font-weight: bold;
 }
 
@@ -238,7 +264,12 @@ h1, h2, h3,h4,h5,h6,p{
 }
 
 .footer{
+    clear: both;
     margin-top:21px;
+}
+
+.footer .footer-item:last-child:after{
+    clear: both;
 }
 
 .footer-item{
@@ -246,28 +277,21 @@ h1, h2, h3,h4,h5,h6,p{
     float: left;
 }
 
-.rounded-img{
-    display: inline-block;
-    border:1px white;
-    border-radius: 50%;
+.footer-item{
+    box-sizing: border-box;
 }
 
-.footer-img{
-    width:33.3px;
-    height: 33.3px;
-}
-
-.footer-item .left{
+.footer-item.left{
     padding-left: 3px;
     text-align: left;
 }
 
-.footer-item .center{
+.footer-item.center{
     padding-right: 77px;
     text-align: center;
 }
 
-.footer-item .right{
+.footer-item.right{
     padding-right: 27px;
     text-align: right;
 }
@@ -277,7 +301,39 @@ h1, h2, h3,h4,h5,h6,p{
     font: bold 18.5px serif; 
 }
 
+.footer-img{
+    vertical-align: middle;
+    width: 33.3px;
+    height: 33.3px;
+}
+
+.footer-item a::before{
+    vertical-align: middle;
+    background-size: 33.3px 33.3px;
+    display: inline-flex;
+    width: 33.3px; 
+    height: 33.3px;
+    content:"";
+}
+
+.footer-item.left a::before{
+    background-image: url(img/twitter-logo.png);
+}
+
+.footer-item.center a::before{
+    background-image: url(img/phone-logo.png)
+}
+
+.footer-item.right a::before{
+    background-image: url(img/mail-logo.png);
+}
+
 footer{
+    background: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  
+    flex: 0 0 auto;
     margin-top:3%;
     height: 50px;
     text-align: center;
