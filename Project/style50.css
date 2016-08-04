@@ -3,21 +3,15 @@ html{
     height: 100%;
 }
 body{
+    word-wrap: break-word;
     margin: 0px;
     height: 100%;
     background: url(img/background.jpg);
     font-family: 'PT Sans',Arial, 'Myriad Pro Bold', sans-serif;
 }
 
-h1, h2, h3,h4,h5,h6{
-    overflow: hidden;
-    text-overflow: ellipsis;
+h1, h2, h3,h4,h5,h6,p{
     margin:0px;
-}
-
-p{
-    margin:0px;
-    word-wrap: break-word;
 }
 
 a{
@@ -32,7 +26,7 @@ a{
 }
 
 .content-container{
-    margin-top: 40px;
+    margin-top: 3%;
     flex: 1 0 auto;
 }
 
@@ -54,6 +48,10 @@ a{
 .header-label, .header-left-column{
     background-color: #ef4541;
     height: 152.67px;
+}
+
+.header-panel{
+    clear: left;
 }
 
 .header-label{  
@@ -78,10 +76,10 @@ a{
 }
 
 .header-image{
-    margin-top:13px;
+    margin-top:6.5%;
     background: white;
-    width: 132.67px;
-    height: 126px;
+    width: 90%;
+    height: 90%;
 }
 
 .header-space{
@@ -97,12 +95,14 @@ a{
 
 .header-center-column h1{
     margin:0px;
+    font-family: 'PT Sans',Arial, 'Myriad Pro Bold', sans-serif;
     font-size: 34px;
     font-weight: bold;
 }
 
 .header-center-column h2{
     margin: 0px;
+    font-family: 'PT Sans',Verdana, 'Myriad Pro Light', sans-serif;
     font-size: 27px;
     color: #ef4541;
     font-weight: 100;
@@ -112,15 +112,30 @@ a{
     margin-bottom:21px;
 }
 
-.left-panel, .header-panel-sign{
+.header-panel-sign{
     float: left;
-    width:55.7587%;
+    width:48%;
 }
 
-.right-panel, .header-right-column{
+.header-right-column{
     float: left;
-    margin-left:6.033%;
-    width:38.2%;
+    margin-left:4%;
+    width:48%;
+}
+
+.content-panel{
+    float: left;
+    margin-bottom:20px;   
+    width:48%;
+}
+
+.content-panel:nth-child(2n+1){
+    width:48%;
+    margin-left: 4%;
+}
+
+.content-panel:nth-child(2n){
+    clear: left;
 }
 
 .panel-header{
@@ -138,7 +153,7 @@ a{
 }
 
 .about-text, .panel-header h3, .property-label, .input-text{
-    font-size: 13px;
+    font: 13px 'PT Sans',Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
@@ -236,7 +251,7 @@ ul.diamond-list li:before{
 
 .list-content.v2{
     margin-left: 5%;
-    width:67.3%;
+    width:65.5%;
 }
 
 .list-year h4{
