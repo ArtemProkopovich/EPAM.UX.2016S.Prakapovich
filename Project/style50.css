@@ -3,15 +3,21 @@ html{
     height: 100%;
 }
 body{
-    word-wrap: break-word;
     margin: 0px;
     height: 100%;
     background: url(img/background.jpg);
     font-family: 'PT Sans',Arial, 'Myriad Pro Bold', sans-serif;
 }
 
-h1, h2, h3,h4,h5,h6,p{
+h1, h2, h3,h4,h5,h6{
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin:0px;
+}
+
+p{
+    margin: 0px;
+    word-wrap: break-word;
 }
 
 a{
@@ -22,7 +28,7 @@ a{
 .wraper {
   display: flex;
   flex-direction: column;
-  height: 99%;
+  height: 100%;
 }
 
 .content-container{
@@ -36,7 +42,7 @@ a{
     margin-right: auto;
     width: 826.667px;
     padding-top:68px;
-    padding-bottom: 3%;
+    padding-bottom: 50px;
     box-shadow: 5px 8px 15px rgb(100,100,100);
 }
 
@@ -72,7 +78,7 @@ a{
 .header-center-column{
     margin-top:80px;
     float:left;
-    margin-left:2%;
+    margin-left:7px;
 }
 
 .header-image{
@@ -82,27 +88,17 @@ a{
     height: 90%;
 }
 
-.header-space{
-    display: inline-block;
-    height: 80px;
-    width: 100%;
-}
-
 .header-info{
     float:left;
     width:60%;
 }
 
 .header-center-column h1{
-    margin:0px;
-    font-family: 'PT Sans',Arial, 'Myriad Pro Bold', sans-serif;
     font-size: 34px;
     font-weight: bold;
 }
 
 .header-center-column h2{
-    margin: 0px;
-    font-family: 'PT Sans',Verdana, 'Myriad Pro Light', sans-serif;
     font-size: 27px;
     color: #ef4541;
     font-weight: 100;
@@ -125,12 +121,11 @@ a{
 
 .content-panel{
     float: left;
-    margin-bottom:20px;   
+    margin-bottom:2.9%;   
     width:48%;
 }
 
 .content-panel:nth-child(2n+1){
-    width:48%;
     margin-left: 4%;
 }
 
@@ -293,33 +288,28 @@ ul.diamond-list li:before{
 }
 
 .footer{
-    overflow: auto;
     clear: both;
     margin-top:21px;
 }
 
-.footer .footer-item:last-child:after{
-    clear: both;
+.footer-content{
+    overflow: auto;
 }
 
 .footer-item{
-    box-sizing: border-box;
     width:33.3%;
     float: left;
 }
 
 .footer-item.left{
-    padding-left: 3px;
     text-align: left;
 }
 
 .footer-item.center{
-    padding-right: 77px;
     text-align: center;
 }
 
 .footer-item.right{
-    padding-right: 27px;
     text-align: right;
 }
 
@@ -357,7 +347,7 @@ ul.diamond-list li:before{
 }
 
 footer{
-    margin-top: 3%;     
+    margin-top: 40px;     
     flex: 0 0 auto;
     height: 50px;
     text-align: center;
@@ -373,6 +363,42 @@ footer{
     background-size: contain;
     width: 300px;
     height: 50px;
+}
+
+.width20{
+    width: 20%;
+}
+
+.width30{
+    width: 30%;
+}
+
+.width40{
+    width: 40%;
+}
+
+.width50{
+    width: 50%;
+}
+
+.width60{
+    width: 60%;
+}
+
+.width70{
+    width: 70%;
+}
+
+.width80{
+    width: 80%;
+}
+
+.width90{
+    width: 90%;
+}
+
+.width100{
+    width: 100%;
 }
 
 .clearfix{
