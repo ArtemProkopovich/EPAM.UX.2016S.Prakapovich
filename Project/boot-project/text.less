@@ -1,0 +1,108 @@
+@custom-font-family:'PT Sans', Arial, 'Myriad Pro Bold', sans-serif;
+
+body{
+    font-family: @custom-font-family;
+}
+
+.simple-text{
+    color:black;
+    margin:0px;
+}
+
+.paragraph-text{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  .simple-text;
+  text-transform: uppercase;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+p {
+  .simple-text;
+  word-wrap:break-word;
+}
+
+label{
+  .simple-text;
+  .paragraph-text;
+}
+
+a {
+  .simple-text;
+  text-decoration:none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.about-text {
+  .paragraph-text;
+}
+
+.header-center-column {
+  h1 {
+    font-size:34px;
+    font-weight:bold;
+  }
+  h2 {
+    font-size:27px;
+    font-weight:normal;
+  }
+}
+
+.panel-header {
+  h3 {
+    .paragraph-text;
+  }
+}
+
+input[type="text"] {
+  .simple-text;
+  .paragraph-text;
+  font-weight: normal;
+}
+
+.list-text{
+  font-size: 15.54px;
+}
+
+.list-year {
+  h4 {
+    .list-text;
+    font-weight:bold;
+  }
+}
+.list-content {
+  h4 {
+    .list-text;
+    font-weight:normal;
+  }
+  h5 {
+    .list-text;
+    font-weight:bold;
+  }
+  p {
+    .list-text;
+    font-weight:normal;
+  }
+}
+
+.footer{
+    .left{
+        text-align:left;
+    }
+    .center {
+        text-align:center;
+    }
+    .right {
+        text-align:right;
+    }
+    .footer-text{
+        vertical-align:middle;
+        font-weight:bold;
+        font-size:18.5px;
+    }
+}
